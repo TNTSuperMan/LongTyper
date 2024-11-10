@@ -8,7 +8,7 @@
     "dev:electron": "npx electron index.js",
     "preview": "vite preview",
     "type-check": "vue-tsc --build --force",
-    "build:pages": "run-p build:license && run-p build:html",
+    "build:pages": "run-p build:license && run-p build",
     "build": "run-p type-check \"build-only {@}\" --",
     "build:license": "node check-license.js",
     "build:electron": "run-p build:electron:win",
