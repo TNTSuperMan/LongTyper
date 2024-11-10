@@ -22,7 +22,7 @@ function onkeydown(e:KeyboardEvent){
 }
 
 const entity = computed(()=>{
-  let t = text.value.substring(0,100).replace(" ", "&nbsp;");
+  let t = text.value.substring(0,300).replace(" ", "&nbsp;");
   let z = t;
   while(true){
     if((z=t.replace("<","&lt;")) != t) t=z;
